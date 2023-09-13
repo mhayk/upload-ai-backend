@@ -11,3 +11,13 @@ $ pnpm i prisma -D
 ```bash
 $ pnpm prisma init --datasource-provider sqlite
 ```
+
+### Migrate
+```bash
+$ pnpm prisma migrate dev
+```
+
+### Studio
+```bash
+$ pnpm prisma studio
+```
