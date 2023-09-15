@@ -9,8 +9,19 @@ POST http://localhost:3333/videos
 Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
 
 ------WebKitFormBoundary7MA4YWxkTrZu0gW
-Content-Disposition: form-data; name="file"; filename="example.mp3"
+Content-Disposition: form-data; name="file"; filename="audio02.mp3"
 Content-Type: audio/mpeg
 
-< ./example.mp3
+< ./audio02.mp3
 ------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+
+###
+
+# @name create-transcription
+POST http://localhost:3333/videos/32e9faf5-5210-445c-abea-170abfec1dc6/transcription
+Content-Type: application/json
+
+{
+    "prompt": "clean code, linux"
+}
