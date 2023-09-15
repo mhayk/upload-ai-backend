@@ -25,3 +25,15 @@ Content-Type: application/json
 {
     "prompt": "clean code, linux"
 }
+
+###
+
+# @name generate-ai-completion
+POST http://localhost:3333/ai/complete
+Content-Type: application/json
+
+{
+    "videoId": "32e9faf5-5210-445c-abea-170abfec1dc6",
+    "temperature": 0.5,
+    "template": "Gere um resumo sucinto da transcrição do vídeo informada a seguir: '''{transcription}'''"
+}
