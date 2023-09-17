@@ -21,3 +21,8 @@ $ pnpm prisma migrate dev
 ```bash
 $ pnpm prisma studio
 ```
+
+### Seed
+```bash
+$ pnpm prisma db seed
+```
